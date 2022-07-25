@@ -3,10 +3,7 @@
 // const crypto = require("crypto");
 // require("dotenv").config();
 
-// require(./test.js)
-Parse.Cloud.define('test:test', async (req) => {
-  return "HELP ME"
-})
+require('./test.js')
 // function checkSig(params, secret) {
 //   // let params = JSON.parse(JSON.stringify(params)) // clone object
 //   let sig = params["sig"];
