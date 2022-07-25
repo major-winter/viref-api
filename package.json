@@ -6,7 +6,8 @@
   "dependencies": {
     "express": "^4.18.1",
     "parse-server": "5.2.1",
-    "parse": "3.4.2"
+    "parse": "3.4.2",
+    "axios": "0.26.0"
   },
   "name": "vinet-api",
   "version": "1.0.0",

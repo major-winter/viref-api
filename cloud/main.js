@@ -2,8 +2,6 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 
-require('./test.js')
-require('./global/myTest.js')
 function checkSig(params, secret) {
   // let params = JSON.parse(JSON.stringify(params)) // clone object
   let sig = params["sig"];
@@ -100,5 +98,5 @@ Parse.Cloud.triggers = {
     this.triggers[key].push(action);
   },
 };
-require("./schema/index");
-require("./triggers/index");
+require("./schema");
+require("./triggers");
