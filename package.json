@@ -1,9 +1,28 @@
 {
   "engines": {
-    "node": "14.0.0"
+    "node": ">=12.22.10 <19"
   },
   "dependencies": {
     "express": "^4.18.1",
-    "parse-server": "4.10.13"
-  }
+    "parse-server": "5.2.1",
+    "parse": "3.4.2"
+  },
+  "name": "vinet-api",
+  "version": "1.0.0",
+  "main": "ParseServer.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/major-winter/viref-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/major-winter/viref-api/issues"
+  },
+  "homepage": "https://github.com/major-winter/viref-api#readme",
+  "description": ""
 }
