@@ -94,4 +94,3 @@ Parse.Cloud.triggers = {
 }
 require('./schema')
 require('./triggers')
-
