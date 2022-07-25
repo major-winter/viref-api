@@ -66,30 +66,31 @@ let modules = [
   },
 ];
 
-for (let mdl of modules) {
-  fs.readdir(__dirname + "/" + mdl.name, (err, files) => {
-    if (err) return false;
-    for (let file of files) {
-      if (file.split(".").pop() != "js") return;
-      let fncs = require(`./${mdl.name}/${file}`);
-      if (fncs.cloudFunction && fncs.cloudFunction.length >= 1) {
-        for (let fnc of fncs.cloudFunction) {
-          let options = Object.assign({}, mdl.options);
-          if (fnc.fields) options.fields = fnc.fields;
-          Parse.Cloud.define(
-            fnc.name,
-            async function (req) {
-              if (!mdl.validate || (await mdl.validate(req, fnc.name)))
-                return fnc.run(req);
-              else return { error: "invalid_request" };
-            },
-            options
-          );
-        }
-      }
-    }
-  });
-}
+// for (let mdl of modules) {
+//   fs.readdir(__dirname + "/" + mdl.name, (err, files) => {
+//     if (err) return false;
+//     for (let file of files) {
+//       if (file.split(".").pop() != "js") return;
+//       let fncs = require(`./${mdl.name}/${file}`);
+//       if (fncs.cloudFunction && fncs.cloudFunction.length >= 1) {
+//         for (let fnc of fncs.cloudFunction) {
+//           let options = Object.assign({}, mdl.options);
+//           if (fnc.fields) options.fields = fnc.fields;
+//           console.log(fnc.name)
+//           Parse.Cloud.define(
+//             fnc.name,
+//             async function (req) {
+//               if (!mdl.validate || (await mdl.validate(req, fnc.name)))
+//                 return fnc.run(req);
+//               else return { error: "invalid_request" };
+//             },
+//             options
+//           );
+//         }
+//       }
+//     }
+//   });
+// }
 
 Parse.Cloud.triggers = {
   triggers: {},
