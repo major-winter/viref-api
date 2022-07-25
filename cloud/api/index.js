@@ -1,1 +1,2 @@
-require('./campaign')
+const campaign =require('./campaign')
+module.exports = campaign
