@@ -3,8 +3,8 @@
 // const crypto = require("crypto");
 // require("dotenv").config();
 // require('./api')
-require('./admin')
-console.log(require('./admin'))
+require('./admin/index.js')
+console.log(require('./admin/index.js'))
 
 // function checkSig(params, secret) {
 //   // let params = JSON.parse(JSON.stringify(params)) // clone object
