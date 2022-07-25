@@ -1,3 +1,5 @@
 const campaign = require('./campaign')
 const company = require('./company')
-module.exports = {campaign, company}
+Parse.Cloud.define('test:test', async (req) => {
+  return "HELP ME"
+})

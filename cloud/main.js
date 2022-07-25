@@ -1,13 +1,11 @@
-const fs = require("fs");
-const path = require("path");
-const crypto = require("crypto");
-require("dotenv").config();
-require('./api')
+// const fs = require("fs");
+// const path = require("path");
+// const crypto = require("crypto");
+// require("dotenv").config();
+// require('./api')
 require('./admin')
+console.log(require('./admin'))
 
-Parse.Cloud.define('test:test', async (req) => {
-  return "HELP ME"
-})
 // function checkSig(params, secret) {
 //   // let params = JSON.parse(JSON.stringify(params)) // clone object
 //   let sig = params["sig"];
