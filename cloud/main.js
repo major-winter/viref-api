@@ -95,13 +95,13 @@ Parse.Cloud.define("test:test", async (req) => {
 //   });
 // }
 //
-Parse.Cloud.triggers = {
-  triggers: {},
-  add(name, className, action) {
-    let key = `${name}-${className}`;
-    if (!this.triggers[key]) this.triggers[key] = [];
-    this.triggers[key].push(action);
-  },
-};
+// Parse.Cloud.triggers = {
+//   triggers: {},
+//   add(name, className, action) {
+//     let key = `${name}-${className}`;
+//     if (!this.triggers[key]) this.triggers[key] = [];
+//     this.triggers[key].push(action);
+//   },
+// };
 require("./schema");
 require("./triggers");
