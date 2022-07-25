@@ -7,7 +7,10 @@
     "express": "^4.18.1",
     "parse-server": "5.2.1",
     "parse": "3.4.2",
-    "axios": "0.26.0"
+    "axios": "0.26.0",
+    "crypto": "1.0.1",
+    "validate-phone-number-node-js": "0.0.1",
+     "moralis": "^1.8.0"
   },
   "name": "vinet-api",
   "version": "1.0.0",
