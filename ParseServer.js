@@ -13,6 +13,9 @@ var api = new ParseServer({
 });
 // Serve the Parse API on the /parse URL prefix
 app.use("/parse", api);
-// app.listen(5000, function () {
-//   console.log("parse-server-example running on port 5000");
-// });
+app.get('/', (req, res) => {
+  res.status(200).send("Hello to vref")
+})
+app.listen(process.env.PORT || 5000, function () {
+  console.log("parse-server-example running on port " + process.env.PORT);
+});
