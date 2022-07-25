@@ -10,7 +10,9 @@
     "axios": "0.26.0",
     "crypto": "1.0.1",
     "validate-phone-number-node-js": "0.0.1",
-     "moralis": "^1.8.0"
+     "moralis": "^1.8.0",
+     "dotenv": "^16.0.1"
+
   },
   "name": "vinet-api",
   "version": "1.0.0",
