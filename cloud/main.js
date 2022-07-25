@@ -92,5 +92,9 @@ Parse.Cloud.triggers = {
 		this.triggers[key].push(action)
 	}
 }
+Parse.Cloud.define('test', async function (req) => {
+  return "Hello World"
+
+})
 require('./schema')
 require('./triggers')
