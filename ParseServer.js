@@ -8,7 +8,7 @@ var api = new ParseServer({
   masterKey: "1MYnluFjy5eus4QB1kVukfQ2WoKwkMd4DctdosVb",
   serverURL: "https://viref.herokuapp.com/parse",
   restAPIKey: "mZSMu9AMEajWWgbGyS5DBloTLcyc2jyJCDasTUoH",
-  cloud: './cloud/main.js',
+  cloud: __dirname + '/cloud/main.js',
 });
 // Serve the Parse API on the /parse URL prefix
 app.use("/parse", api);
