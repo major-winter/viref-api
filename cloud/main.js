@@ -4,6 +4,7 @@
 // require("dotenv").config();
 
 require('./test.js')
+require('./global/myTest.js')
 // function checkSig(params, secret) {
 //   // let params = JSON.parse(JSON.stringify(params)) // clone object
 //   let sig = params["sig"];
