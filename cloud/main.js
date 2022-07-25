@@ -2,16 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
-const Moralis = require("moralis/node");
 require("dotenv").config()
-
-// function startMoralis() {
-//   Moralis.start({
-//     serverUrl: process.env.MORALIS_SERVERURL,
-//     appId: process.env.MORALIS_APPID,
-//     masterKey: process.env.MORALIS_MASTERKEY,
-//   })
-// }
 
 function checkSig(params, secret) {
 	// let params = JSON.parse(JSON.stringify(params)) // clone object
@@ -104,4 +95,3 @@ Parse.Cloud.triggers = {
 require('./schema')
 require('./triggers')
 
-// startMoralis()
