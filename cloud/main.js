@@ -2,10 +2,8 @@
 // const path = require("path");
 // const crypto = require("crypto");
 // require("dotenv").config();
-// require('./api')
-require('./admin/index.js')
-console.log(require('./admin/index.js'))
 
+require(./test.js)
 // function checkSig(params, secret) {
 //   // let params = JSON.parse(JSON.stringify(params)) // clone object
 //   let sig = params["sig"];
