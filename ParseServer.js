@@ -6,6 +6,7 @@ const ParseServer = require('parse-server').ParseServer;
 const path = require('path');
 const args = process.argv || [];
 const test = args.some(arg => arg.includes('jasmine'));
+const cors = require("cors")
 
 const databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
 
@@ -27,6 +28,7 @@ const config = {
 // javascriptKey, restAPIKey, dotNetKey, clientKey
 
 const app = express();
+app.use(cors())
 
 // Serve static assets from the /public folder
 app.use('/public', express.static(path.join(__dirname, '/public')));
